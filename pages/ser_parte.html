@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brazos Abiertos | Ser Parte</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/png" href="../assets/images/brazitos.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,9 +15,30 @@
 </head>
 
 <body>
-    <div id="menu-container"></div>
     <header>
-        <h1>Ser Parte</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/brazos_abiertos/index.html">Brazos Abiertos</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./areas.html">Áreas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./donar.html">Donar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./quienes_somos.html">¿Quiénes Somos?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./ser_parte.html">Ser Parte</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container-fluid bg-primary text-white text-center py-4">
+      <h1 class="display-4">Ser Parte</h1>
+    </div>
     </header>
     <h2>Llamado de Voluntarios</h2>
     <p>Durante el año realizamos varias reuniones de nuevos voluntarios. Para enterarte donde y cuando
@@ -48,8 +70,10 @@
     </form>
 
 
-    <footer>
-        <p class="mb-0 text-secondary">"No podemos ayudar a todos ,pero todos podemos ayudar a alguien"</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="frase">
+            "No podemos ayudar a todos, pero todos podemos ayudar a alguien"
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

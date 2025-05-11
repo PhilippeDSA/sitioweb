@@ -1,0 +1,17 @@
+@use './variables' as *;
+*::before,
+*::after {
+    margin:0;
+    box-sizing:border-box;
+    padding:0;
+}
+body{
+    font-family: $fuente-base;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+a{color: $color-primario;
+text-decoration: none;
+&:hover{text-decoration: underline;
+}}

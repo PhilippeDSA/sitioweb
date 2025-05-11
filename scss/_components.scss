@@ -1,0 +1,8 @@
+@use 'mixin' as *;
+@use 'variables' as *;
+.btn-primario{
+    @include boton($color-primario)
+}
+.btn-secundario{
+    @include boton($color-secundario)
+}

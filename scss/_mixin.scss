@@ -1,0 +1,21 @@
+@use './variables' as *;
+@use 'sass:color';
+@mixin boton($color, $color-texto:white){
+background-color: $color;
+color: $color-texto;
+padding: 10px 20px;
+border-radius:  5px;
+cursor:pointer;
+transition: all 0.3s ease;
+&:hover {
+    background-color: color.adjust($color, $lightness: -10%);
+     }
+}
+@mixin animacion-fade($tiempo: 0.5s) {
+animation:fadeIn $tiempo ease-in-out;
+}
+
+@keyframes fadeIn {
+    0%{ opacity: 0; }
+    100%{opacity:1; }
+}
