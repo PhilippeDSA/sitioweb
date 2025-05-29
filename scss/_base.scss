@@ -1,17 +1,66 @@
 @use './variables' as *;
+
 *::before,
 *::after {
-    margin:0;
-    box-sizing:border-box;
-    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
-body{
+
+body {
     font-family: $fuente-base;
     background-color: $color-fondo;
     color: $color-texto;
 }
 
-a{color: $color-primario;
-text-decoration: none;
-&:hover{text-decoration: underline;
-}}
+a {
+    color: $color-primario;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: $custom-heading-size;
+}
+
+%padreimg {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+    display: block;
+}
+
+
+.difusion_padreimg {
+    @extend %padreimg;
+}
+
+.eventos_padreimg {
+    @extend %padreimg;
+}
+
+.regalos_padreimg {
+    @extend %padreimg;
+}
+
+.myp_padreimg {
+    @extend %padreimg;
+}
+
+.colectas_padreimg {
+    @extend %padreimg;
+}
